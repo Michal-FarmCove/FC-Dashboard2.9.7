@@ -1,0 +1,452 @@
+
+
+        /* Overlay styling */
+.overlay {
+    position: fixed;
+    top: 25px; /* Start below the blue line */
+    left: 250px; /* Start after the sidebar */
+    width: calc(100% - 250px); /* Cover the rest of the content */
+    height: calc(100% - 25px); /* Adjust for the blue line at the top */
+    background-color: black;
+    z-index: 100; /* Ensure it is above all other content */
+    pointer-events: none; /* Allow interaction with content underneath */
+    opacity: 88%;
+    display: flex; /* Add flexbox for centering child elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+
+
+
+/* Centered White Box */
+.centered-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 1250px;
+    height: 80%; /* Define height for layout visualization */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1010;
+    padding: 10px; /* Padding for inner content */
+	margin-left: 118px;
+	margin-top: 15px;
+}
+
+/* Outer Container */
+.outer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Padding for the outer container */
+    box-sizing: border-box;
+}
+
+/* Top Container */
+.top-container {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start; /* Aligns items to the top of the container */
+    align-items: flex-start; /* Aligns items to the left */
+    padding: 0px; /* Adds padding for proper spacing from the container edges */
+    width: 98.45%;
+    height: 7%; /* Adjusted to fit the title and divider */
+    background-color: white; /* Background color */
+    border-radius: 4px;
+	margin-bottom: 10px;
+	font-size: 6px;
+
+}
+
+/* Title (h2) */
+.top-container h2 {
+    margin: 0; /* Removes default margin */
+    color: Black; /* Title color */
+    font-size: 18px; /* Adjust as needed */
+    text-align: left; /* Ensures text is left-aligned */
+    width: 80%; /* Ensures the title spans the container width */
+
+}
+
+/* Divider */
+.divider {
+    width: 100%; /* Adjust the width of the divider */
+    height: 2px; /* Thickness of the divider */
+    background-color: Black; /* Divider color */
+    margin-top: 10px; /* Space between the title and divider */
+}
+
+
+/* Middle Containers */
+.middle-container {
+    width: 100%;
+    height: 95%; /* Remaining 85% of the outer container */
+    display: flex;
+    gap: 10px; /* Spacing between columns */
+    box-sizing: border-box;
+
+}
+
+/* Left Container */
+.left-container {
+    width: 30%; /* 30% of the outer container's width */
+    background-color: white; /* Different color for differentiation */
+    border-radius: 4px;
+	margin-left: 11px;
+	margin-right: 16px;
+}
+
+/* Center Container */
+.center-container {
+    width: 40%; /* 40% of the outer container's width */
+    background-color: #FFD700; /* Different color for differentiation */
+    border-radius: 4px;
+		margin-left: 16px;
+	margin-right: 16px;
+}
+
+/* Right Container */
+.right-container {
+    width: 30%; /* 30% of the outer container's width */
+    background-color: white; /* Different color for differentiation */
+    border-radius: 4px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+
+
+
+/* Close Circle Button */
+.close-circle {
+    position: absolute;
+    top: -18px; /* Adjusted for consistent padding */
+    right: -17px; /* Adjusted for consistent padding */
+    width: 35px; /* Circle size */
+    height: 35px; /* Circle size */
+    background-color: #F95A5A; /* Red background */
+    color: white; /* White "X" */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    z-index: 12020; /* Ensure it appears above other content */
+    box-sizing: border-box; /* Prevent padding from affecting the size */
+}
+
+.close-circle:hover {
+    background-color: grey; /* Darker color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center Container */
+.center-container {
+    display: flex;
+    flex-direction: column; /* Stacks rows vertically */
+    height: 100%; /* Full height of its parent container */
+    background-color: white; /* Keeps the yellow background */
+    width: 70%;
+    margin: 0 auto; /* Centers the container horizontally */
+    box-sizing: border-box;
+}
+
+/* Top Row */
+.top-row {
+    display: flex;
+    flex: 3; /* Top row takes 30% of the height */
+    width: 100%; /* Full width of the center container */
+	
+}
+
+/* Box Left */
+.box-left {
+    flex: 1; /* Takes 50% width of the row */
+    background-color: white; /* Blue for differentiation */
+    color: black; /* Black text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns items at the top */
+
+	margin-right: 14px;
+    box-sizing: border-box;
+}
+
+/* Box Right */
+.box-right {
+    flex: 1; /* Takes 50% width of the row */
+    background-color: white; /* Green for differentiation */
+    color: black; /* Black text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns items at the top */
+	margin-left: 14px;
+
+    box-sizing: border-box;
+}
+
+/* Box Bottom */
+.box-bottom {
+    flex: 7; /* Bottom box takes 70% of the height */
+    width: 98.5%; /* Full width of the center container */
+    background-color: white; /* Red for differentiation */
+    color: black; /* Black text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns items at the top */
+	margin-left: 5px;
+	margin-right: 5px;
+    box-sizing: border-box;
+	margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+.image-class {
+    max-width: 95%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0px auto; /* Adds spacing around the image */
+    border: 1px solid black; /* Optional: Adds a border */
+    display: block; /* Centers the image within its container */
+	border: none; /* Ensures no border */
+	margin-top: 25px;
+}
+
+.image-class2 {
+    max-width: 100%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0px auto; /* Adds spacing around the image */
+    border: 1px solid black; /* Optional: Adds a border */
+    display: block; /* Centers the image within its container */
+	border: none; /* Ensures no border */
+	border-radius: 1.5%; /* Makes it a circle */
+}
+
+
+.image-class3 {
+    max-width: 100%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0px auto; /* Adds spacing around the image */
+    border: 1px solid black; /* Optional: Adds a border */
+    display: block; /* Centers the image within its container */
+	border: none; /* Ensures no border */
+	border-radius: 1.5%; /* Makes it a circle */
+	margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.centered-boxv2 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.close-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.top-container {
+    text-align: center;
+    width: 100%;
+}
+
+.window-head {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.divider {
+    height: 2px;
+    background-color: #ddd;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Layout Grid */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr; /* Reduce the middle column (yellow) */
+    grid-template-rows: auto auto; /* Two rows: yellow/blue and green */
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* Containers */
+.container-t-l {
+    background-color: white;
+    grid-column: 3 / 4; /* Right column */
+    grid-row: 1 / 2; /* First row only */
+}
+
+.container-t-m {
+    background-color: white;
+    grid-column: 2 / 3; /* Middle column */
+    grid-row: 1 / 2; /* First row only */
+}
+
+.container-r {
+    background-color: white;
+    grid-column: 1 / 2; /* Left column */
+    grid-row: 1 / 3; /* Stretches across both rows */
+}
+
+.container-b {
+    background-color: white;
+    grid-column: 2 / 4; /* Spans middle and right columns */
+    grid-row: 2 / 3; /* Second row */
+}
+
+/* Optional: Add borders for clarity */
+.container-r, .container-t-m, .container-t-l, .container-b {
+    border: 1px solid white;
+}
+
+
+
+
+.button-containerrr {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Reduced gap between buttons */
+    margin-top: 20px; /* Keeps spacing above the buttons */
+}
+
+.button1v1 {
+    background-color: #32B8CD;
+    color: white;
+    border: none;
+    padding: 8px 38px;
+    border-radius: 52px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+	gap: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.button1v1:hover {
+    background-color:  #717171;
+	color: white;
+}
+
+.manage-recipients {
+    font-family: Arial, sans-serif;
+    color: black; /* Ensure all text is black */
+}
+
+.manage-recipients h3 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Adjust margin below 'Manage Recipients' */
+}
+
+.manage-recipients h4 {
+    font-size: 18px;
+    margin-bottom: 5px; /* Reduce margin below 'Current Recipients' and 'Add Recipient' */
+}
+
+.recipients-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin-bottom: 20px; /* Add spacing below tables */
+    font-size: 14px;
+    text-align: left;
+}
+
+.recipients-table thead {
+    background-color: #EAEAEA; /* Light gray header background */
+}
+
+.recipients-table th, .recipients-table td {
+    border: 1px solid #ddd; /* Light gray border for table cells */
+    padding: 10px; /* Add padding inside cells */
+}
+
+.recipients-table th {
+    font-weight: bold; /* Make header text bold */
+}
+
+.recipients-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Add a subtle alternating row color */
+}
+
+.recipients-table tbody tr:nth-child(even) {
+    background-color: white; /* Ensure even rows are white */
+}
+
+.recipients-table input[type="checkbox"] {
+    margin: 0; /* Align checkboxes properly */
+}
+
+.recipients-table tbody td {
+    color: black; /* Ensure table body text is black */
+}

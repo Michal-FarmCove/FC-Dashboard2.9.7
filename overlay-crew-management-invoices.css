@@ -1,0 +1,722 @@
+
+
+        /* Overlay styling */
+.overlay {
+    position: fixed;
+    top: 25px; /* Start below the blue line */
+    left: 250px; /* Start after the sidebar */
+    width: calc(100% - 250px); /* Cover the rest of the content */
+    height: calc(100% - 25px); /* Adjust for the blue line at the top */
+    background-color: black;
+    z-index: 100; /* Ensure it is above all other content */
+    pointer-events: none; /* Allow interaction with content underneath */
+    opacity: 88%;
+    display: flex; /* Add flexbox for centering child elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+
+
+
+/* Centered White Box */
+.centered-box {
+    position: fixed;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    max-width: 1250px;
+    height: 88%; /* Define a fixed or percentage height to enable scrolling */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1010;
+    padding: 10px; /* Padding for inner content */
+    margin-left: 118px;
+    margin-top: 15px;
+
+
+}
+
+/* Outer Container */
+.outer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Padding for the outer container */
+    box-sizing: border-box;
+}
+
+/* Top Container */
+.top-container {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: space-between; /* Aligns items to the top of the container */
+    align-items: center; /* Aligns items to the left */
+    padding: 0px; /* Adds padding for proper spacing from the container edges */
+    width: 98.45%;
+    height: 29%; /* Adjusted to fit the title and divider */
+    background-color: white; /* Background color */
+    border-radius: 4px;
+    margin-bottom: 10px; /* Space below for the divider */
+	font-size: 6px;
+
+}
+
+/* Title (h2) */
+.top-container h2 {
+    margin: 0; /* Removes default margin */
+    color: Black; /* Title color */
+    font-size: 18px; /* Adjust as needed */
+    text-align: left; /* Ensures text is left-aligned */
+    width: 80%; /* Ensures the title spans the container width */
+
+}
+
+/* Divider */
+.divider {
+    width: 100%; /* Adjust the width of the divider */
+    height: 2px; /* Thickness of the divider */
+    background-color: Black; /* Divider color */
+    margin-top: 10px; /* Space between the title and divider */
+}
+
+
+/* Middle Containers */
+.middle-container {
+    width: 100%;
+    height: 550%; /* Remaining 85% of the outer container */
+    display: flex;
+    gap: 10px; /* Spacing between columns */
+    box-sizing: border-box;
+	background-color: white;
+
+}
+
+/* Left Container */
+.left-container {
+    width: 30%; /* 30% of the outer container's width */
+    background-color: white; /* Different color for differentiation */
+    border-radius: 4px;
+	margin-left: 11px;
+	margin-right: 16px;
+}
+
+/* Center Container */
+.center-container {
+    width: 10%; /* 40% of the outer container's width */
+    background-color: #FFD700; /* Different color for differentiation */
+    border-radius: 4px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+/* Center Container */
+.center-containerv2 {
+    width: 10%; /* 40% of the outer container's width */
+    background-color: white; /* Different color for differentiation */
+    border-radius: 4px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+/* Right Container */
+.right-container {
+    width: 30%; /* 30% of the outer container's width */
+    background-color: white; /* Different color for differentiation */
+    border-radius: 4px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+
+
+
+/* Close Circle Button */
+.close-circle {
+    position: absolute;
+    top: -18px; /* Adjusted for consistent padding */
+    right: -17px; /* Adjusted for consistent padding */
+    width: 35px; /* Circle size */
+    height: 35px; /* Circle size */
+    background-color: #F95A5A; /* Red background */
+    color: white; /* White "X" */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    z-index: 12020; /* Ensure it appears above other content */
+    box-sizing: border-box; /* Prevent padding from affecting the size */
+}
+
+.close-circle:hover {
+    background-color: grey; /* Darker color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center Container */
+.center-container {
+    display: flex;
+    flex-direction: column; /* Stacks rows vertically */
+    height: 100%; /* Full height of its parent container */
+    background-color: white; /* Keeps the yellow background */
+    width: 100%;
+    margin: 0 auto; /* Centers the container horizontally */
+    box-sizing: border-box;
+}
+
+/* Top Row */
+.top-row {
+    display: flex;
+    flex: 3; /* Top row takes 30% of the height */
+    width: 100%; /* Full width of the center container */
+	background-color: white;
+	
+}
+/* Top Row */
+.top-rowv2 {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    flex: 3; /* Top row takes 30% of the height */
+    width: 920%; /* Full width of the center container */
+    background-color: white;
+    gap: 10px; /* Add spacing between the boxes */
+}
+
+/* Top Row */
+.top-row2 {
+    display: flex;
+    flex: 3; /* Top row takes 30% of the height */
+    width: 100%; /* Full width of the center container */
+	background-color: white;
+	height: 10%;
+	
+}
+
+
+/* Box Left */
+.box-left {
+    flex: 1; /* Takes 50% width of the row */
+    background-color: white; /* Blue for differentiation */
+    color: black; /* Black text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns items at the top */
+	background-color: white;
+	margin-right: 14px;
+    box-sizing: border-box;
+}
+/* Box Left */
+.box-leftv2 {
+    flex: none; /* Ensure it doesn't shrink or grow */
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 0; /* Reset margin if necessary */
+    box-sizing: border-box;
+}
+
+/* Box Right */
+.box-right {
+    flex: 1; /* Takes 50% width of the row */
+    background-color: white; /* Green for differentiation */
+    color: black; /* Black text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns items at the top */
+	margin-left: 14px;
+
+    box-sizing: border-box;
+}
+
+/* Box Right */
+.box-rightv2 {
+    flex: none; /* Ensure it doesn't shrink or grow */
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0; /* Reset margin if necessary */
+    box-sizing: border-box;
+}
+
+
+/* Box Right */
+.box-right2 {
+    flex: 1; /* Takes 50% width of the row */
+	height: 685px;
+    color: black; /* Black text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns items at the top */
+	margin-left: 14px;
+
+    box-sizing: border-box;
+}
+
+/* Box Bottom */
+.box-bottom {
+    flex: 7; /* Bottom box takes 70% of the height */
+    width: 98.5%; /* Full width of the center container */
+    background-color: white; /* Red for differentiation */
+    color: black; /* Black text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the left */
+    justify-content: flex-start; /* Aligns items at the top */
+	margin-left: 5px;
+	margin-right: 5px;
+    box-sizing: border-box;
+	margin-top: 15px;
+}
+
+
+
+
+
+
+
+.image-class {
+    max-width: 95%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0px auto; /* Adds spacing around the image */
+    border: 1px solid black; /* Optional: Adds a border */
+    display: block; /* Centers the image within its container */
+	border: none; /* Ensures no border */
+	margin-top: 25px;
+}
+
+.image-class2 {
+    max-width: 100%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0px auto; /* Adds spacing around the image */
+    border: 1px solid black; /* Optional: Adds a border */
+    display: block; /* Centers the image within its container */
+	border: none; /* Ensures no border */
+	border-radius: 1.5%; /* Makes it a circle */
+}
+
+
+
+
+.image1 {
+    max-width: 50%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 40px auto 0 auto; /* Centers the image horizontally and adds top margin */
+    display: block; /* Centers the image */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer; /* Changes the cursor to indicate interactivity */
+}
+
+.image1:hover {
+    content: url('invoices-hoover.png'); /* Changes the image on hover */
+    transform: scale(1.05); /* Slightly enlarges the image on hover (optional) */
+}
+
+
+
+
+
+
+.table-inv {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.document-table {
+  width: 100%; /* Make the table span the full width of its container */
+  border-collapse: collapse; /* Remove extra spacing between cells */
+  font-size: 14px; /* Adjust font size for readability */
+}
+
+.document-table td {
+  padding: 8px 5px; /* Compact padding for cells */
+  text-align: left; /* Default left alignment for text */
+  vertical-align: middle; /* Align content in the middle */
+}
+
+.document-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.document-table td:nth-child(1) {
+  font-weight: bold; /* Make the first column (names) text bold */
+}
+
+.document-table td:last-child {
+  text-align: right; /* Right-align the last column (buttons) */
+}
+
+.document-table .view-button,
+.document-table .request-button {
+  background-color: #32B8CD; /* Button color */
+  color: white;
+  border: none;
+  padding: 5px 0;
+  width: 80px; /* Fixed width for uniformity */
+  text-align: center; /* Center text inside the button */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px; /* Adjust font size for smaller buttons */
+}
+
+.document-table .view-button:hover,
+.document-table .request-button:hover {
+  background-color: #575757; /* Darker hover effect */
+}
+
+.document-table .missing-text {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Spacing between the red circle and text */
+  color: #F95A5A;
+  font-weight: bold;
+}
+
+.document-table .missing-text .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Makes it a circle */
+  background-color: #F95A5A; /* Updated color */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.document-table tr:hover {
+  background-color: #f9f9f9; /* Highlight row on hover */
+}
+
+
+
+
+
+
+
+
+
+
+/* Style the nav-bar-window to arrange navigation buttons and window head horizontally */
+.nav-bar-window {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: flex-start; /* Align everything to the left */
+    gap: 10px; /* Add spacing between buttons and header */
+    width: 100%; /* Ensure it spans the full container width */
+}
+
+/* Navigation buttons group */
+.navigation-buttons {
+    display: flex;
+    gap: 5px; /* Spacing between buttons */
+	color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation button circles */
+.nav-button-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #32B8CD; /* Adjust background color */
+    cursor: pointer;
+	color: white;
+	border-color: white;
+	font-size: 25px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+}
+
+/* Navigation button circles */
+.nav-button-circle2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #717171; /* Adjust background color */
+    cursor: pointer;
+	color: white;
+	border-color: white;
+	font-size: 25px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+}
+
+/* Navigation button circles */
+.nav-button-circle:hover{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #717171; /* Adjust background color */
+    cursor: pointer;
+}
+
+/* Window head styling */
+.window-head {
+    margin-left: 10px; /* Add space between the buttons and the text */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+	
+}
+
+/* Divider styling */
+.divider {
+    height: 2px;
+    background-color: #ccc; /* Adjust color */
+    width: 100%;
+	
+}
+
+
+
+
+
+.grid2 {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    gap: 15px; /* Space between cards */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Prevent cards from stretching to the full container height */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white; /* Page background */
+	width: 100%;
+	
+}
+
+.card2 {
+    flex: 1 1 calc(10% - 15px); /* Adjusts width dynamically for 4 cards per row */
+    max-width: calc(10% - 15px); /* Prevents exceeding container width */
+    min-width: 75px; /* Minimum size for smaller screens */
+    background-color: white; /* Card background color */
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    padding: 5px;
+    box-sizing: border-box;
+    height: 100px; /* Height adjusts to content */
+    text-align: center;
+
+}
+
+
+.card2:hover {
+    filter: brightness(1.00); /* Increases brightness by 20% */
+    transform: scale(1.05); /* Optional: Slightly scales the card */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+}
+
+
+
+
+
+
+
+.card-section-horizontal2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card-section-horizontal2 .label2 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.card-section-horizontal2 .value2 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+    margin: 0;
+}
+
+.card-section {
+    width: 100%; /* Full width of the container */
+    text-align: left; /* Aligns all child text to the left */
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: flex-start; /* Aligns children to the left */
+    box-sizing: border-box;
+	margin-left: 10px;
+}
+
+
+.avatar-image {
+    width: auto; /* Avatar size */
+    height: 89%;
+    margin-bottom: 2px;
+	background-color:blue;
+}
+
+.avatar-text {
+    font-size: 12px;
+    color: black;
+    font-weight: bold; /* Bold text */
+    text-align: left; /* Aligns text to the left */
+    margin-top: 5px; /* Adds spacing above the text */
+    width: 100%; /* Ensures it spans the full width of the parent container */
+    display: block; /* Ensures it behaves like a block-level element */
+    box-sizing: border-box; /* Includes padding and borders in size calculations */
+}
+
+
+
+.image-container {
+    font-size: 12px;
+    color: black;
+    font-weight: bold; /* Use 'font-weight' instead of 'text-decoration' for bold text */
+    text-align: center; /* Aligns text horizontally */
+    display: flex; /* Makes the container a flexbox */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 81%; /* Ensures it fills the container's height */
+    width: 98%; /* Ensures it fills the container's width */
+    box-sizing: border-box; /* Include padding and border in size */
+	background-color: #32B8CD;
+	padding-bottom: 1px;
+
+	
+}
+
+
+.image-container2 {
+    font-size: 12px;
+    color: black;
+    font-weight: bold; /* Use 'font-weight' instead of 'text-decoration' for bold text */
+    text-align: center; /* Aligns text horizontally */
+    display: flex; /* Makes the container a flexbox */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 130%; /* Ensures it fills the container's height */
+    width: 100%; /* Ensures it fills the container's width */
+    box-sizing: border-box; /* Include padding and border in size */
+	background-color: #EAEAEA;
+	padding-bottom: 1px;
+
+	
+}
+
+
+.image-container3 {
+    font-size: 25px;
+    color: black;
+    font-weight: bold; /* Use 'font-weight' instead of 'text-decoration' for bold text */
+    text-align: center; /* Aligns text horizontally */
+    display: flex; /* Makes the container a flexbox */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    box-sizing: border-box; /* Include padding and border in size */
+	background-color: #EAEAEA;
+	padding-bottom: 1px;
+
+
+	
+}
+
+.image-container4 {
+    font-size: 12px;
+    color: black;
+    font-weight: bold; /* Use 'font-weight' instead of 'text-decoration' for bold text */
+    text-align: center; /* Aligns text horizontally */
+    display: flex; /* Makes the container a flexbox */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 10%; /* Ensures it fills the container's height */
+    width: 101%; /* Ensures it fills the container's width */
+    box-sizing: border-box; /* Include padding and border in size */
+	background-color: #EAEAEA;
+	padding-bottom: 1px;
+	margin-top: 8px;
+
+
+	
+}
+
+
+
+/* Main container */
+.main-container {
+    display: flex; /* Enables flexbox layout */
+    width: 100%; /* Ensures the container spans the full width */
+    gap: 0px; /* Adds 10px gap between the containers */
+    padding: 0; /* Removes extra padding around the main container */
+    margin: 0; /* Removes extra margins */
+    box-sizing: border-box; /* Ensures padding and borders are included in size */
+
+}
+
+/* Left and right containers */
+
+.right-container {
+    flex: 1; /* Ensures both containers take up equal width */
+
+    padding: 0px; /* Padding inside each container */
+    box-sizing: border-box; /* Includes padding and borders in size calculations */
+	width: 50%;
+	margin-right: -5px;
+	margin-left: 15px;
+}
+
+
+.left-container {
+    flex: 1; /* Ensures both containers take up equal width */
+
+    padding: 0px; /* Padding inside each container */
+    box-sizing: border-box; /* Includes padding and borders in size calculations */
+	width: 50%;
+	margin-left: 0px;
+	margin-right: 10px;
+}
